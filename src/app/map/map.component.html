@@ -8,12 +8,15 @@
   </div>
 </div>-->
 
-<div id="map" class="map row"></div>
+<div id="map" class="map row margin-zero"></div>
 
 <div class="list-box">
+  <div class="item" [ngStyle]="{'color': 'black'}">
+    <mat-checkbox class="example-margin" [(ngModel)]="checkedAll" [checked]="checkedAll" [(indeterminate)]="isIndeteminate" (change)="onToggleAll()">전체</mat-checkbox>
+  </div>
   <ng-container *ngFor="let p of viewData">
-    <div class="item">
-      <mat-checkbox class="example-margin" checked="checked" (change)="onChange(p.seq, $event)">{{p.title}}</mat-checkbox>
+    <div class="item" [ngStyle]="{'color': p.color}">
+      <mat-checkbox class="example-margin" [checked]="p.display" (change)="onChange(p.seq, $event, null)">{{p.title}}</mat-checkbox>
     </div>
   </ng-container>
 

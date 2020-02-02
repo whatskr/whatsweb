@@ -25,7 +25,9 @@ declare var kakao;
           width: 100px;
           height: 500px;
           border-radius: 10px;
-          background: #f5f5f5;
+          background: #e8e8e8;
+          border: 2px solid #737373;
+          opacity: 0.8;
       }
 
       .item {
@@ -36,6 +38,11 @@ declare var kakao;
           text-align: left;
           height: 30px;
       }
+    
+    .margin-zero {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
   `]
 })
 export class MapComponent implements OnInit {
@@ -43,14 +50,13 @@ export class MapComponent implements OnInit {
   map: any;
   infowindow: any;
 
+  checkedAll = true;
+  isIndeteminate = false;
+
   viewData = [];
 
-  // 마커들
   places = [
-    {name: '공대2호관 쪽문나가는길', lat: 36.363775, lon: 127.346709},
-    {name: '공대2호관 뒷길(초등학교사이)', lat: 36.364176, lon: 127.347213},
-    {name: '체육관 좌측', lat: 36.371124, lon: 127.341466},
-    {name: '박물관뒤 주차장', lat: 36.370845, lon: 127.345263}
+    {name: '테스트', lat: 36.363775, lon: 127.346709}
   ];
 
   constructor(private dataService: DataService) {
@@ -84,20 +90,44 @@ export class MapComponent implements OnInit {
     }, 300);
   }
 
-  onChange(idx: number, $event) {
-    if ($event.checked) {
-      this.viewData[idx - 1].polyline.setMap(this.map);
-      this.viewData[idx - 1].markers.forEach(marker => {
-        marker.setVisible(true);
-      });
-    } else {
-      this.viewData[idx - 1].polyline.setMap(null);
-      this.viewData[idx - 1].markers.forEach(marker => {
-        marker.setVisible(false);
-      });
-    }
-
+  // ** Have to do a refactoring which of Event stuff ** //
+  onToggleAll() {
+    console.log('this.checkedAll', this.checkedAll);
+    this.viewData.forEach((row, idx) => {
+      row.display = this.checkedAll;
+      console.log(row.display);
+      this.onChange(idx + 1, {checked: this.checkedAll}, 'NOT NULL');
+    });
+    this.isIndeteminate = false;
   }
+
+  onChange(idx: number, $event, caller) {
+    this.changeCheckbox(idx, $event);
+
+    let isThereCheckedItem = false;
+    let isThereNoncheckedItem = false;
+    if (caller == null) {
+      console.log('here');
+      this.viewData.forEach(row => {
+          if (row.display) {
+            isThereCheckedItem = true;
+          } else {
+            isThereNoncheckedItem = true;
+          }
+      });
+      this.isIndeteminate = (isThereCheckedItem && isThereDischeckedItem) ? true : false;
+      this.checkedAll = !isThereNoncheckedItem;
+    }
+  }
+
+  changeCheckbox(idx: number, $event) {
+    this.viewData[idx - 1].display = $event.checked;
+    this.viewData[idx - 1].polyline.setMap($event.checked ? this.map : null);
+    this.viewData[idx - 1].markers.forEach(marker => {
+      marker.setVisible($event.checked);
+    });
+  }
+  // -- ** Have to do a refactoring which of Event stuff ** //
 
   addOverlay() {
     const me = this;
@@ -105,7 +135,6 @@ export class MapComponent implements OnInit {
       map(items => items.sort(this.sortByName))
     ).subscribe((data: [any]) => {
       data.forEach((row, idx) => {
-        //TODO: draw info-box on the leftside of Map
 
         const obj = {
           seq: idx + 1,
@@ -114,6 +143,7 @@ export class MapComponent implements OnInit {
           title: row.title,
           contactTot: row.contactTot,
           color: row.color,
+          display: true,
         };
 
         // draw markers
@@ -127,16 +157,15 @@ export class MapComponent implements OnInit {
 
         // draw lines
         const polyline = new kakao.maps.Polyline({
-          path: linePath, // 선을 구성하는 좌표배열 입니다
-          strokeWeight: 2, // 선의 두께 입니다
-          strokeColor: obj.color, // 선의 색깔입니다
-          strokeOpacity: 0.8, // 선의 불투명도 입니다 1에서 0 사이의 값이며 0에 가까울수록 투명합니다
-          strokeStyle: 'solid' // 선의 스타일입니다
+          path: linePath,
+          strokeWeight: 2,
+          strokeColor: obj.color,
+          strokeOpacity: 0.8,
+          strokeStyle: 'solid',
+          endArrow: true,
         });
         polyline.setMap(this.map);
         obj.polyline = polyline;
-        // TODO: add arrows
-
 
         me.viewData.push(obj);
       });
