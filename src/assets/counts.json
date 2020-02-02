@@ -1,0 +1,202 @@
+[
+    {
+      "seq": 1,
+      "nat": "cn",
+      "name": "중국",
+      "confirmed": 11791,
+      "deaths": 259,
+      "increased": 0
+    },
+    {
+      "seq": 2,
+      "nat": "hk",
+      "name": "홍콩",
+      "confirmed": 12,
+      "deaths": 0,
+      "increased": 0
+    },
+    {
+      "seq": 3,
+      "nat": "tw",
+      "name": "대만",
+      "confirmed": 10,
+      "deaths": 0,
+      "increased": 0
+    },
+    {
+      "seq": 4,
+      "nat": "mo",
+      "name": "마카오",
+      "confirmed": 7,
+      "deaths": 0,
+      "increased": 0
+    },
+    {
+      "seq": 5,
+      "nat": "th",
+      "name": "태국",
+      "confirmed": 19,
+      "deaths": 0,
+      "increased": 0
+    },
+    {
+      "seq": 6,
+      "nat": "sg",
+      "name": "싱가포르",
+      "confirmed": 13,
+      "deaths": 0,
+      "increased": 0
+    },
+    {
+      "seq": 7,
+      "nat": "jp",
+      "name": "일본",
+      "confirmed": 15,
+      "deaths": 0,
+      "increased": 0
+    },
+    {
+      "seq": 8,
+      "nat": "vn",
+      "name": "베트남",
+      "confirmed": 5,
+      "deaths": 0,
+      "increased": 0
+    },
+    {
+      "seq": 9,
+      "nat": "np",
+      "name": "네팔",
+      "confirmed": 1,
+      "deaths": 0,
+      "increased": 0
+    },
+    {
+      "seq": 10,
+      "nat": "my",
+      "name": "말레이시아",
+      "confirmed": 8,
+      "deaths": 0,
+      "increased": 0
+    },
+    {
+      "seq": 11,
+      "nat": "kh",
+      "name": "캄보디아",
+      "confirmed": 1,
+      "deaths": 0,
+      "increased": 0
+    },
+    {
+      "seq": 12,
+      "nat": "lk",
+      "name": "스리랑카",
+      "confirmed": 1,
+      "deaths": 0,
+      "increased": 0
+    },
+    {
+      "seq": 13,
+      "nat": "ae",
+      "name": "아랍에미리트",
+      "confirmed": 4,
+      "deaths": 0,
+      "increased": 0
+    },
+    {
+      "seq": 14,
+      "nat": "in",
+      "name": "인도",
+      "confirmed": 1,
+      "deaths": 0,
+      "increased": 0
+    },
+    {
+      "seq": 15,
+      "nat": "ph",
+      "name": "필리핀",
+      "confirmed": 1,
+      "deaths": 0,
+      "increased": 0
+    },
+    {
+      "seq": 16,
+      "nat": "us",
+      "name": "미국",
+      "confirmed": 6,
+      "deaths": 0,
+      "increased": 0
+    },
+    {
+      "seq": 17,
+      "nat": "ca",
+      "name": "캐나다",
+      "confirmed": 3,
+      "deaths": 0,
+      "increased": 0
+    },
+    {
+      "seq": 18,
+      "nat": "fr",
+      "name": "프랑스",
+      "confirmed": 6,
+      "deaths": 0,
+      "increased": 0
+    },
+    {
+      "seq": 19,
+      "nat": "de",
+      "name": "프랑스",
+      "confirmed": 5,
+      "deaths": 0,
+      "increased": 0
+    },
+    {
+      "seq": 20,
+      "nat": "fi",
+      "name": "핀란드",
+      "confirmed": 1,
+      "deaths": 0,
+      "increased": 0
+    },
+    {
+      "seq": 21,
+      "nat": "it",
+      "name": "이탈리아",
+      "confirmed": 2,
+      "deaths": 0,
+      "increased": 0
+    },
+    {
+      "seq": 22,
+      "nat": "gb",
+      "name": "영국",
+      "confirmed": 2,
+      "deaths": 0,
+      "increased": 0
+    },
+    {
+      "seq": 23,
+      "nat": "ru",
+      "name": "러시아",
+      "confirmed": 2,
+      "deaths": 0,
+      "increased": 0
+    },
+    {
+      "seq": 24,
+      "nat": "au",
+      "name": "호주",
+      "confirmed": 9,
+      "deaths": 0,
+      "increased": 0
+    },
+  {
+    "seq": 25,
+    "nat": "kr",
+    "name": "한국",
+    "confirmed": 12,
+    "deaths": 0,
+    "increased": 0
+  }
+]

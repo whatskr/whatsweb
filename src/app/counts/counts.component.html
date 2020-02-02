@@ -1,0 +1,19 @@
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th scope="col">국가</th>
+    <th scope="col">감염자</th>
+    <th scope="col">사망자</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let row of datas; index as i">
+    <td scope="row" [koreaHighlight]="row.nat">
+      <img [src]="'assets/images/' + row.nat + '.png'" class="mr-2" style="width: 20px">
+      {{ row.name}}
+    </td>
+    <td [koreaHighlight]="row.nat">{{ row.confirmed | number }}</td>
+    <td [koreaHighlight]="row.nat">{{ row.deaths | number }}</td>
+  </tr>
+  </tbody>
+</table>

@@ -1,0 +1,42 @@
+[
+  {
+    "seq": 1,
+    "title": "1번째 확진자",
+    "contactTot": 45,
+    "color": "red",
+    "loc": [
+      {
+        "ord": 1,
+        "latitude": 37.460899,
+        "longitude": 126.440735,
+        "text": "인천공항"
+      },
+      {
+        "ord": 2,
+        "latitude": 37.478611,
+        "longitude": 126.668493,
+        "text": "인천시의료원"
+      }
+    ]
+  },
+  {
+    "seq": 2,
+    "title": "2번째 확진자",
+    "contactTot": 30,
+    "color": "blue",
+    "loc": [
+      {
+        "ord": 1,
+        "latitude": 37.460879,
+        "longitude": 126.440435,
+        "text": "인천공항"
+      },
+      {
+        "ord": 2,
+        "latitude": 37.478621,
+        "longitude": 126.668483,
+        "text": "인천시의료원"
+      }
+    ]
+  }
+]
