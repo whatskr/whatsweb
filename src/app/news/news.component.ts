@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Directive, ElementRef, Input, OnInit, Pipe, PipeTransform} from '@angular/core';
 import {DataService, NaverSearchOption, SortOption} from '../data.service';
 
 @Component({
@@ -8,23 +8,25 @@ import {DataService, NaverSearchOption, SortOption} from '../data.service';
 })
 export class NewsComponent implements OnInit {
 
-  newsData: [];
+  newsData: any;
 
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
-    const options: NaverSearchOption = {
-      query: '신종 코로나바이러스',
-      display: 5,
-      start: 1,
-      sort: SortOption.date
-    };
-
-    /*this.dataService.naverNews(options).subscribe((data) => {
-      console.log(data);
-      this.newsData = data;
-    });*/
+    this.dataService.getNaverNews().subscribe((data) => {
+      this.newsData = data.items;
+    });
   }
 
+  goToLink(url: string) {
+    window.open(url, '_blank');
+  }
+}
 
+@Pipe({name: 'deleteHtmlTags'})
+export class DeleteHtmlTags implements PipeTransform {
+  transform(value: string, ...args): string {
+    console.log('delete html');
+    return value.replace(/(<([^>]+)>)/ig, '');
+  }
 }

@@ -25,3 +25,13 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+네이티브 앱 키
+11cd6c464501063fbef0cee2d166cc3bREST 
+API 키
+6d13ed57a7b73576f0e620059cad861f
+JavaScript 키
+770dbcece55d11117067f61199e2d2f7
+Admin 키
+26f82bd65d2233811ddddc35b787b13e

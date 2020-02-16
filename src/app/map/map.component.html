@@ -1,22 +1,39 @@
-
 <!--<div class="row">
   <div class="col-2">
 
   </div>
   <div class="col-10">
     <div id="map" class="map row"></div>
-  </div>
+  </div> john.jongjin.park@gmail.com
 </div>-->
 
 <div id="map" class="map row margin-zero"></div>
 
-<div class="list-box">
+<div class="confirmedCountlayer layer_base" [ngStyle]="{'top': (-innerHeight + 70) + 'px'}" *ngIf="baseData">
+  <div style=""> <!-- margin-bottom: 5px; border-bottom: 0.5px solid #c7c7c7; -->
+    <span><h5 style="margin-bottom: 3px;">확진자</h5></span>
+    <span style="font-size: 1.1rem; font-weight: bold;">{{baseData.confirmed}}명</span>
+  </div>
+  <!--<div>
+    <span><h5 style="margin-bottom: 3px;">유증상자</h5></span>
+    <span style="font-size: 1.1rem; font-weight: bold;">{{baseData.suspected}}명</span>
+  </div>-->
+</div>
+
+<div class="layer_base desc">
+  제보 혹은 잘못된 내용이 있으면 이메일로 연락 부탁드립니다.<br/>john.jongjin.park@gmail.com<br/>출처: 질병관리본부, 제보
+</div>
+
+<div class="list-box layer_base" [ngStyle]="{'top': (-innerHeight + 80) + 'px', 'height': selectAreaHeight + 'px'}">
   <div class="item" [ngStyle]="{'color': 'black'}">
-    <mat-checkbox class="example-margin" [(ngModel)]="checkedAll" [checked]="checkedAll" [(indeterminate)]="isIndeteminate" (change)="onToggleAll()">전체</mat-checkbox>
+    <mat-checkbox class="example-margin" [(ngModel)]="checkedAll" [checked]="checkedAll"
+                  [(indeterminate)]="isIndeteminate" (change)="onToggleAll()">전체
+    </mat-checkbox>
   </div>
   <ng-container *ngFor="let p of viewData">
     <div class="item" [ngStyle]="{'color': p.color}">
-      <mat-checkbox class="example-margin" [checked]="p.display" (change)="onChange(p.seq, $event, null)">{{p.title}}</mat-checkbox>
+      <mat-checkbox class="example-margin" [checked]="p.display"
+                    (change)="onChange(p.seq, $event, null)">{{p.title}}</mat-checkbox>
     </div>
   </ng-container>
 

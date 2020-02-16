@@ -3,40 +3,796 @@
     "seq": 1,
     "title": "1번째 확진자",
     "contactTot": 45,
-    "color": "red",
+    "color": "#ce2424",
     "loc": [
       {
         "ord": 1,
         "latitude": 37.460899,
         "longitude": 126.440735,
-        "text": "인천공항"
+        "text": "1/19 인천공항"
       },
       {
         "ord": 2,
         "latitude": 37.478611,
         "longitude": 126.668493,
-        "text": "인천시의료원"
+        "text": "1/19 인천시의료원"
       }
     ]
   },
   {
     "seq": 2,
     "title": "2번째 확진자",
-    "contactTot": 30,
+    "contactTot": 75,
+    "color": "#fd6f22",
+    "loc": [
+      {
+        "ord": 1,
+        "latitude": 37.558813,
+        "longitude": 126.802944,
+        "text": "1/22 김포공항"
+      },
+      {
+        "ord": 2,
+        "latitude": 37.549588,
+        "longitude": 126.868277,
+        "text": "1/23 강서보건소"
+      },
+      {
+        "ord": 3,
+        "latitude": 37.567246,
+        "longitude": 127.005656,
+        "text": "1/24 서울 국립중앙의료원"
+      }
+    ]
+  },
+  {
+    "seq": 3,
+    "title": "3번째 확진자",
+    "contactTot": 95,
+    "color": "#fdad2c",
+    "loc": [
+      {
+        "ord": 1,
+        "latitude": 37.460899,
+        "longitude": 126.440735,
+        "text": "1/20 인천공항"
+      },
+      {
+        "ord": 2,
+        "latitude": 37.527736,
+        "longitude": 127.032482,
+        "text": "1/22 한일관 압구정점"
+      },
+      {
+        "ord": 3,
+        "latitude": 37.524821,
+        "longitude": 127.050326,
+        "text": "1/22 본죽 청담프리마점"
+      },
+      {
+        "ord": 4,
+        "latitude": 37.524360,
+        "longitude": 127.027951,
+        "text": "1/22 강남 글로비 성형외과"
+      },
+      {
+        "ord": 5,
+        "latitude": 37.503007,
+        "longitude": 127.049132,
+        "text": "1/22 강남구 호텔 뉴브"
+      },
+      {
+        "ord": 6,
+        "latitude": 37.527774,
+        "longitude": 127.019491,
+        "text": "1/23 GS 한강잠원 1호점"
+      },
+      {
+        "ord": 7,
+        "latitude": 37.524381,
+        "longitude": 127.027991,
+        "text": "1/24 강남 글로비 성형외과"
+      },
+      {
+        "ord": 8,
+        "latitude": 37.677870,
+        "longitude": 126.812182,
+        "text": "1/24 스타벅스 일산식사점"
+      },
+      {
+        "ord": 9,
+        "latitude": 37.674010,
+        "longitude": 126.776936,
+        "text": "1/24 본죽 일산정발산점 및 일산 모친댁"
+      },
+      {
+        "ord": 10,
+        "latitude": 37.642140,
+        "longitude": 126.831231,
+        "text": "1/25 일산 명지병원(격리)"
+      }
+    ]
+  },
+  {
+    "seq": 4,
+    "title": "4번째 확진자",
+    "contactTot": 172,
+    "color": "#ffc642",
+    "loc": [
+      {
+        "ord": 1,
+        "latitude": 37.460899,
+        "longitude": 126.440735,
+        "text": "1/20 인천공항"
+      },
+      {
+        "ord": 2,
+        "latitude": 37.079607,
+        "longitude": 127.058292,
+        "text": "1/20 송탄시외버스터미널"
+      },
+      {
+        "ord": 3,
+        "latitude": 37.052019,
+        "longitude": 127.057321,
+        "text": "1/21 평택 365연합의원"
+      },
+      {
+        "ord": 4,
+        "latitude": 37.351346,
+        "longitude": 127.123439,
+        "text": "1/26 분당 서울대병원"
+      }
+    ]
+  },
+  {
+    "seq": 5,
+    "title": "5번째 확진자",
+    "contactTot": 29,
+    "color": "#fff83a",
+    "loc": [
+      {
+        "ord": 1,
+        "latitude": 37.460899,
+        "longitude": 126.440735,
+        "text": "1/24 인천공항"
+      },
+      {
+        "ord": 2,
+        "latitude": 37.592562,
+        "longitude": 127.017050,
+        "text": "1/25 CGV 성신여대입구"
+      },
+      {
+        "ord": 3,
+        "latitude": 37.580095,
+        "longitude": 127.015606,
+        "text": "1/26 성북구 역술인"
+      },
+      {
+        "ord": 4,
+        "latitude": 37.589593,
+        "longitude": 127.009768,
+        "text": "1/26 성북구 소재 마트"
+      },
+      {
+        "ord": 5,
+        "latitude": 37.588900,
+        "longitude": 127.007770,
+        "text": "1/27 다이소 방문"
+      },
+      {
+        "ord": 6,
+        "latitude": 37.590333,
+        "longitude": 127.015221,
+        "text": "1/27 성북구 마사지샵 방문"
+      },
+      {
+        "ord": 7,
+        "latitude": 37.592060,
+        "longitude": 127.018899,
+        "text": "1/27 성북구 식당에서 식사"
+      },
+      {
+        "ord": 8,
+        "latitude": 37.589593,
+        "longitude": 127.009768,
+        "text": "1/28 성북구 소재 마트"
+      },
+      {
+        "ord": 9,
+        "latitude": 37.599035,
+        "longitude": 127.090836,
+        "text": "1/28 중랑구 칼국수집"
+      },
+      {
+        "ord": 10,
+        "latitude": 37.523680,
+        "longitude": 127.046547,
+        "text": "1/28 강남구 웨딩샵"
+      },
+      {
+        "ord": 11,
+        "latitude": 37.603308,
+        "longitude": 127.025026,
+        "text": "1/29 성북구 자택"
+      },
+      {
+        "ord": 12,
+        "latitude": 37.612794,
+        "longitude": 127.098163,
+        "text": "1/30 서울의료원"
+      }
+    ]
+  },
+  {
+    "seq": 6,
+    "title": "6번째-3번지인",
+    "contactTot": 29,
+    "color": "#ced932",
+    "loc": [
+      {
+        "ord": 1,
+        "latitude": 37.527788,
+        "longitude": 127.032478,
+        "text": "1/22 한일관 압구정점"
+      },
+      {
+        "ord": 1,
+        "latitude": 37.587409,
+        "longitude": 126.997573,
+        "text": "1/26 종로 소재 교회"
+      },
+      {
+        "ord": 2,
+        "latitude": 37.351346,
+        "longitude": 127.123439,
+        "text": "1/30 분당 서울대학교병원"
+      }
+    ]
+  },
+  {
+    "seq": 7,
+    "title": "7번째 확진자",
+    "contactTot": 29,
+    "color": "#79ab33",
+    "loc": [
+      {
+        "ord": 1,
+        "latitude": 37.460899,
+        "longitude": 126.440735,
+        "text": "1/23 인천공항"
+      },
+      {
+        "ord": 2,
+        "latitude": 37.260640,
+        "longitude": 126.979274,
+        "text": "1/24-27 경기 수원시 권선구 일대"
+      },
+      {
+        "ord": 3,
+        "latitude": 37.612794,
+        "longitude": 127.098163,
+        "text": "1/30 서울의료원"
+      }
+    ]
+  },
+  {
+    "seq": 8,
+    "title": "8번째 확진자",
+    "contactTot": 29,
+    "color": "#3e8939",
+    "loc": [
+      {
+        "ord": 1,
+        "latitude": 37.460899,
+        "longitude": 126.440735,
+        "text": "1/23 인천공항"
+      },
+      {
+        "ord": 2,
+        "latitude": 35.986693,
+        "longitude": 126.708148,
+        "text": "1/25 군산 사우나"
+      },
+      {
+        "ord": 3,
+        "latitude": 35.968133,
+        "longitude": 126.716100,
+        "text": "1/27 군산 내과방문"
+      },
+      {
+        "ord": 4,
+        "latitude": 35.954701,
+        "longitude": 126.712465,
+        "text": "1/28 군산의료원"
+      },
+      {
+        "ord": 5,
+        "latitude": 35.976031,
+        "longitude": 126.705512,
+        "text": "1/29 군산 떡갈비 식당"
+      },
+      {
+        "ord": 6,
+        "latitude": 35.982785,
+        "longitude": 126.734866,
+        "text": "1/29 군산 이마트"
+      },
+      {
+        "ord": 7,
+        "latitude": 35.964673,
+        "longitude": 126.720226,
+        "text": "1/30 군산보건소"
+      },
+      {
+        "ord": 8,
+        "latitude": 35.964366,
+        "longitude": 126.959643,
+        "text": "1/30 익산 원광대병원"
+      }
+    ]
+  },
+  {
+    "seq": 9,
+    "title": "9번째-5번지인",
+    "contactTot": 29,
+    "color": "#0c6a49",
+    "loc": [
+      {
+        "ord": 1,
+        "latitude": 37.612794,
+        "longitude": 127.098163,
+        "text": "1/30~31 서울자택->서울의료원"
+      }
+    ]
+  },
+  {
+    "seq": 10,
+    "title": "10번째-6번아내",
+    "contactTot": 29,
+    "color": "#0a689b",
+    "loc": [
+      {
+        "ord": 1,
+        "latitude": 37.641218,
+        "longitude": 126.791979,
+        "text": "1/30 헤어샵 이용"
+      },
+      {
+        "ord": 2,
+        "latitude": 37.351346,
+        "longitude": 127.123439,
+        "text": "1/31 분당 서울대학교병원"
+      }
+    ]
+  },
+  {
+    "seq": 11,
+    "title": "11번째-6번아들",
+    "contactTot": 29,
+    "color": "#0a6ac9",
+    "loc": [
+      {
+        "ord": 1,
+        "latitude": 37.351346,
+        "longitude": 127.123439,
+        "text": "1/31 분당 서울대학교병원"
+      }
+    ]
+  },
+  {
+    "seq": 12,
+    "title": "12번째 확진자",
+    "contactTot": 29,
+    "color": "#075dd5",
+    "loc": [
+      {
+        "ord": 1,
+        "latitude": 37.460899,
+        "longitude": 126.440735,
+        "text": "1/19 인천공항"
+      },
+      {
+        "ord": 2,
+        "latitude": 37.559848,
+        "longitude": 126.975672,
+        "text": "1/20 중구소재 음식점/남대문 쇼핑"
+      },
+      {
+        "ord": 3,
+        "latitude": 37.485829,
+        "longitude": 126.781021,
+        "text": "1/20 부천역 소재 극장"
+      },
+      {
+        "ord": 4,
+        "latitude": 37.461694,
+        "longitude": 126.631154,
+        "text": "1/21 인천출입국사무소"
+      },
+      {
+        "ord": 5,
+        "latitude": 37.454363,
+        "longitude": 126.660801,
+        "text": "1/21 인천남구소재 친구집 방문"
+      },
+      {
+        "ord": 6,
+        "latitude": 37.553634,
+        "longitude": 126.969609,
+        "text": "1/22 서울역 KTX 이용"
+      },
+      {
+        "ord": 7,
+        "latitude": 37.764074,
+        "longitude": 128.898851,
+        "text": "1/22 강릉역"
+      },
+      {
+        "ord": 8,
+        "latitude": 37.683497,
+        "longitude": 129.043882,
+        "text": "1/22 썬크루즈리조트 투숙 및 카페,음식점 이용"
+      },
+      {
+        "ord": 9,
+        "latitude": 37.483692,
+        "longitude": 126.778107,
+        "text": "1/23 부천속내과"
+      },
+      {
+        "ord": 10,
+        "latitude": 37.484087,
+        "longitude": 126.782803,
+        "text": "1/23 부천역"
+      },
+      {
+        "ord": 11,
+        "latitude": 37.266128,
+        "longitude": 126.999669,
+        "text": "1/24 수원역 및 수원소재 친척집 방문"
+      },
+      {
+        "ord": 12,
+        "latitude": 37.332563,
+        "longitude": 126.926961,
+        "text": "1/24 군포소재 친척집 방문"
+      },
+      {
+        "ord": 13,
+        "latitude": 37.359124,
+        "longitude": 126.930964,
+        "text": "1/25 내과 및 약국"
+      },
+      {
+        "ord": 14,
+        "latitude": 37.484025,
+        "longitude": 126.782593,
+        "text": "1/26 부천역 및 CGV영화관람"
+      },
+      {
+        "ord": 15,
+        "latitude": 37.557177,
+        "longitude": 127.007700,
+        "text": "1/27 신라면세점 및 서울 중구 일대"
+      },
+      {
+        "ord": 16,
+        "latitude": 37.494150,
+        "longitude": 126.781047,
+        "text": "1/30 부천보건소"
+      },
+      {
+        "ord": 17,
+        "latitude": 37.498404,
+        "longitude": 126.762863,
+        "text": "1/30 부천 순천향대학교 부속병원"
+      },
+      {
+        "ord": 18,
+        "latitude": 37.351346,
+        "longitude": 127.123439,
+        "text": "분당 서울대학교병원"
+      }
+    ]
+  },
+  {
+    "seq": 13,
+    "title": "13번째 확진자",
+    "contactTot": 29,
     "color": "blue",
     "loc": [
       {
         "ord": 1,
-        "latitude": 37.460879,
-        "longitude": 126.440435,
-        "text": "인천공항"
+        "latitude": 37.460899,
+        "longitude": 126.440735,
+        "text": "1/31 인천공항"
       },
       {
         "ord": 2,
-        "latitude": 37.478621,
-        "longitude": 126.668483,
-        "text": "인천시의료원"
+        "latitude": 37.567246,
+        "longitude": 127.005656,
+        "text": "2/2 서울 국립중앙의료원"
+      }
+    ]
+  },
+  {
+    "seq": 14,
+    "title": "14번째-12번가족",
+    "contactTot": 29,
+    "color": "#0648b2",
+    "loc": [
+      {
+        "ord": 1,
+        "latitude": 37.351346,
+        "longitude": 127.123439,
+        "text": "2/2 분당 서울대학교병원"
+      }
+    ]
+  },
+  {
+    "seq": 15,
+    "title": "15번째 확진자",
+    "contactTot": 29,
+    "color": "#062486",
+    "loc": [
+      {
+        "ord": 1,
+        "latitude": 37.460899,
+        "longitude": 126.440735,
+        "text": "1/20 인천공항"
+      },
+      {
+        "ord": 2,
+        "latitude": 37.300193,
+        "longitude": 126.995927,
+        "text": "1/21-29 경기도 수원시 장안구 일대"
+      },
+      {
+        "ord": 3,
+        "latitude": 37.304346,
+        "longitude": 127.010177,
+        "text": "2/1 수원 장안구보건소"
+      },
+      {
+        "ord": 4,
+        "latitude": 37.392829,
+        "longitude": 127.149064,
+        "text": "2/2 국군수도병원"
+      }
+    ]
+  },
+  {
+    "seq": 16,
+    "title": "16번째 확진자",
+    "contactTot": 0,
+    "color": "#6b1c7d",
+    "loc": [
+      {
+        "ord": 1,
+        "latitude": 34.993611,
+        "longitude": 126.387863,
+        "text": "1/19 무안공항"
+      },
+      {
+        "ord": 2,
+        "latitude": 35.156295,
+        "longitude": 126.826167,
+        "text": "(추정)입국 후 광주시 자택 등"
+      },
+      {
+        "ord": 3,
+        "latitude": 35.175810,
+        "longitude": 126.818142,
+        "text": "1/27 광주 21세기병원"
+      },
+      {
+        "ord": 4,
+        "latitude": 35.141919,
+        "longitude": 126.921691,
+        "text": "2/3 전남대병원"
+      }
+    ]
+  },
+  {
+    "seq": 17,
+    "title": "17번째 확진자",
+    "contactTot": 0,
+    "color": "#7e1e80",
+    "loc": [
+      {
+        "ord": 1,
+        "latitude": 37.460899,
+        "longitude": 126.440735,
+        "text": "1/24 인천공항"
+      },
+      {
+        "ord": 2,
+        "latitude": 37.555112,
+        "longitude": 126.970598,
+        "text": "1/24 서울역 음식점"
+      },
+      {
+        "ord": 3,
+        "latitude": 35.879658,
+        "longitude": 128.628626,
+        "text": "1/25 대구 수성구, 북구"
+      },
+      {
+        "ord": 4,
+        "latitude": 35.879241,
+        "longitude": 128.627382,
+        "text": "1/25 동대구역"
+      },
+      {
+        "ord": 5,
+        "latitude": 37.554295,
+        "longitude": 126.970501,
+        "text": "1/25 서울역"
+      },
+      {
+        "ord": 6,
+        "latitude": 37.601191,
+        "longitude": 127.132381,
+        "text": "1/26 한양대 구리병원 응급실"
+      },
+      {
+        "ord": 7,
+        "latitude": 37.606389,
+        "longitude": 127.139130,
+        "text": "1/27 근처 병원진료"
+      },
+      {
+        "ord": 8,
+        "latitude": 37.587173,
+        "longitude": 127.138739,
+        "text": "1/29 이삭토스트"
+      },
+      {
+        "ord": 9,
+        "latitude": 37.586961,
+        "longitude": 127.138416,
+        "text": "1/29 프리마트"
+      },
+      {
+        "ord": 10,
+        "latitude": 37.587045,
+        "longitude": 127.138217,
+        "text": "2/3 근처 병원진료"
+      },
+      {
+        "ord": 11,
+        "latitude": 37.587341,
+        "longitude": 127.138735,
+        "text": "2/3 본죽"
+      },
+      {
+        "ord": 12,
+        "latitude": 37.545361,
+        "longitude": 127.103635,
+        "text": "2/3 광나루역 및 이마트 24"
+      },
+      {
+        "ord": 13,
+        "latitude": 37.601239,
+        "longitude": 127.132836,
+        "text": "2/4 한양대 구리병원 선별진료소"
+      },
+      {
+        "ord": 14,
+        "latitude": 37.606389,
+        "longitude": 127.139130,
+        "text": "2/3 구리시 약국"
+      },
+      {
+        "ord": 15,
+        "latitude": 37.642140,
+        "longitude": 126.831231,
+        "text": "1/5 일산 명지병원(격리)"
+      }
+    ]
+  },
+  {
+    "seq": 18,
+    "title": "18번째-16번딸",
+    "contactTot": 0,
+    "color": "#9a157f",
+    "loc": [
+      {
+        "ord": 4,
+        "latitude": 35.141919,
+        "longitude": 126.921691,
+        "text": "2/5 전남대병원"
+      }
+    ]
+  },
+  {
+    "seq": 19,
+    "title": "19번째-17번동료",
+    "contactTot": 0,
+    "color": "#bd1c7f",
+    "loc": [
+      {
+        "ord": 12,
+        "latitude": 37.612794,
+        "longitude": 127.098163,
+        "text": "2/5 서울의료원"
+      }
+    ]
+  },
+  {
+    "seq": 20,
+    "title": "20번째 확진자",
+    "contactTot": 0,
+    "color": "#e80074",
+    "loc": [
+      {
+        "ord": 1,
+        "latitude": 37.392829,
+        "longitude": 127.149064,
+        "text": "2/5 국군수도병원"
+      }
+    ]
+  },
+  {
+    "seq": 21,
+    "title": "21번째 확진자",
+    "contactTot": 0,
+    "color": "#ff0066",
+    "loc": [
+      {
+        "ord": 1,
+        "latitude": 37.351346,
+        "longitude": 127.123439,
+        "text": "2/6 분당 서울대병원"
+      }
+    ]
+  },
+  {
+    "seq": 22,
+    "title": "22번째-16번가족",
+    "contactTot": 0,
+    "color": "#fccc00",
+    "loc": [
+      {
+        "ord": 1,
+        "latitude": 35.138587,
+        "longitude": 126.926667,
+        "text": "2/6 조선대병원"
+      }
+    ]
+  },
+  {
+    "seq": 23,
+    "title": "23번째",
+    "contactTot": 0,
+    "color": "#663300",
+    "loc": [
+      {
+        "ord": 1,
+        "latitude": 37.578810,
+        "longitude": 126.936239,
+        "text": "서대문보건소"
+      }
+    ]
+  },
+  {
+    "seq": 24,
+    "title": "24번째",
+    "contactTot": 0,
+    "color": "#79ab33",
+    "loc": [
+      {
+        "ord": 1,
+        "latitude": 37.612794,
+        "longitude": 127.098163,
+        "text": "2/6 서울의료원"
       }
     ]
   }
 ]
+
+
+
+
